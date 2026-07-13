@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.vscode/
+
+helmet_dataset/data/
+runs/detect/
+static/violations/
+
+video.mp4
+yolov8n.pt
+helmet.pt
+challan.db
+``
