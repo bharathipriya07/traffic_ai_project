@@ -152,12 +152,12 @@ new Chart(ctx, {
         datasets: [{
             label: 'Totals',
             backgroundColor: ['#22c55e', '#38bdf8'],
-            data: {{ [totals.violation_count, totals.total_fine] | tojson }},,
+            data: {{ [totals.violation_count, totals.total_fine] | tojson }},
             borderWidth: 1
         }]
     },
     options: {
-        scales: 
+        scales: {
             y: {
                 beginAtZero: true
             }

@@ -1,6 +1,7 @@
+import os
 import sqlite3
 
-DB_PATH = "challan.db"
+DB_PATH = os.environ.get("DB_PATH", "challan.db")
 
 
 def get_connection():

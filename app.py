@@ -11,9 +11,13 @@ def bootstrap_database():
     # Add sample record if empty
     rows = fetch_violations()
     if len(rows) == 0:
-        insert_challan("KA01AB1234", "Over-speeding", 1000, "speeding.jpg")
-        insert_challan("MH02CD5678", "Signal Jump", 1500, "signal_jump.jpg")
-        insert_challan("DL05EF9012", "Helmet violation", 500, "helmet.jpg")
+        insert_challan("KA01AB1234", "Over-speeding", 1000, "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=600&q=80")
+        insert_challan("MH02CD5678", "Signal Jump", 1500, "https://images.unsplash.com/photo-1510935512061-f09c6f2a8a47?auto=format&fit=crop&w=600&q=80")
+        insert_challan("DL05EF9012", "Helmet violation", 500, "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80")
+
+
+# Ensure database is bootstrapped on startup
+bootstrap_database()
 
 
 @app.route("/")
@@ -44,6 +48,5 @@ def api_violations():
 
 
 if __name__ == "__main__":
-    bootstrap_database()
     app.run(debug=True, host="0.0.0.0", port=5000)
 
