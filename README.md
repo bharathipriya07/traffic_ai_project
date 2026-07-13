@@ -17,6 +17,8 @@ A Python-based traffic violation detection system that uses computer vision and 
 - templates/ - HTML templates for the dashboard
 - static/violations/ - Saved violation images
 
+  demo website -https://traffic-ai-project-2.onrender.com0
+
 ## Requirements
 Install the dependencies using:
 
