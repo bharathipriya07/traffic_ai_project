@@ -9,7 +9,5 @@ runs/detect/
 static/violations/
 
 video.mp4
-yolov8n.pt
-helmet.pt
 challan.db
 ``
